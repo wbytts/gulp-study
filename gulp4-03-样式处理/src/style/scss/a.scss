@@ -1,0 +1,20 @@
+﻿$w: 400px;
+$c: red;
+
+.box {
+  width: $w;
+  height: $w;
+  background-color: $c;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.block {
+  width: 40px;
+  height: 40px;
+  background-color: green;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
