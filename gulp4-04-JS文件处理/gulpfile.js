@@ -10,6 +10,7 @@ const gulpRevCollector = require('gulp-rev-collector');
 const gulpClean = require('gulp-clean');
 const gulpHtmlmin = require('gulp-htmlmin');
 const gulpCreateCustomDir = require('gulp-create-custom-dir');
+const gulpEslint = require('gulp-eslint');
 // const gulpImagemin = require('gulp-imagemin');
 
 // 清理构建目录
