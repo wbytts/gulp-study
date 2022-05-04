@@ -21,6 +21,15 @@ module.exports = {
       experimentalObjectRestSpread: false,
     },
   },
+  env: {
+    browser: true,
+    amd: true, // 使用AMD模式的模块
+  },
+  global: {
+    require: 'readonly',
+    requirejs: 'readonly',
+    define: 'readonly',
+  },
   rules: {
     // ########## Possible Errors
     // 强制 “for” 循环中更新子句的计数器朝着正确的方向移动
@@ -106,11 +115,11 @@ module.exports = {
     // 强制类方法使用 this
     'class-methods-use-this': 'off',
     // 指定程序中允许的最大环路复杂度
-    'complexity': 'off',
+    complexity: 'off',
     // 要求 return 语句要么总是指定返回的值，要么不指定
     'consistent-return': 'off',
     // 强制所有控制语句使用一致的括号风格
-    'curly': 'off',
+    curly: 'off',
     // 要求 switch 语句中有 default 分支
     'default-case': 'off',
     // 强制在点号之前和之后一致的换行
@@ -118,7 +127,7 @@ module.exports = {
     // 强制尽可能地使用点号
     'dot-notation': 'off',
     // 要求使用 === 和 !==
-    'eqeqeq': 'off',
+    eqeqeq: 'off',
     // 要求 for-in 循环中有一个 if 语句
     'guard-for-in': 'off',
     // 强制每个文件中包含的的类的最大数量
@@ -234,7 +243,7 @@ module.exports = {
     // 要求使用 Error 对象作为 Promise 拒绝的原因
     'prefer-promise-reject-errors': 'off',
     // 强制在 parseInt() 使用基数参数
-    'radix': 'off',
+    radix: 'off',
     // 禁止使用不带 await 表达式的 async 函数
     'require-await': 'off',
     // 强制在 RegExp 上使用 u 标志
@@ -244,11 +253,11 @@ module.exports = {
     // 要求 IIFE 使用括号括起来
     'wrap-iife': 'off',
     // 要求或禁止 “Yoda” 条件
-    'yoda': 'off',
+    yoda: 'off',
 
     // ########## Strict Mode
     // 要求或禁止使用严格模式指令
-    'strict': 'off',
+    strict: 'off',
 
     // ########## Variables
     // 要求或禁止 var 声明中的初始化
@@ -310,7 +319,7 @@ module.exports = {
     // 强制在代码块中使用一致的大括号风格
     'brace-style': 'off',
     // 强制使用骆驼拼写法命名约定
-    'camelcase': 'off',
+    camelcase: 'off',
     // 强制或禁止对注释的第一个字母大写
     'capitalized-comments': 'off',
     // 要求或禁止末尾逗号
@@ -344,7 +353,7 @@ module.exports = {
     // 强制隐式返回的箭头函数体的位置
     'implicit-arrow-linebreak': 'off',
     // 强制使用一致的缩进
-    'indent': 'off',
+    indent: 'off',
     // 强制在 JSX 属性中一致地使用双引号或单引号
     'jsx-quotes': 'off',
     // 强制在对象字面量的属性中键和值之间使用一致的间距
@@ -450,9 +459,9 @@ module.exports = {
     // 要求对象字面量属性名称用引号括起来
     'quote-props': 'off',
     // 强制使用一致的反勾号、双引号或单引号
-    'quotes': 'off',
+    quotes: ['error', 'single'],
     // 要求或禁止使用分号代替 ASI
-    'semi': 'off',
+    semi: ['error', 'always'],
     // 强制分号之前和之后使用一致的空格
     'semi-spacing': 'off',
     // 强制分号的位置
